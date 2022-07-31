@@ -151,7 +151,6 @@ p {
 .hero-section {
   background-color: var(--hero-section-bg-color);
   text-align: center;
-  padding-bottom: 94px;
 }
 
 /* Hero Section */
@@ -184,6 +183,7 @@ p {
 
 /* Benefits Section */
 .benefits {
+  padding-top: 94px;
   padding-bottom: 94px;
 }
 
