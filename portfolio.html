@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GOIT-MARKUP-HW-02</title>
+    <title>GOIT-MARKUP-HW-03</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./CSS/styles.css" />
   </head>
 
   <body>
-    <header>
+    <header class="page-header">
       <div class="container header-flex">
         <a class="logo" href="./index.html"
           ><span class="logo-blue">Web</span
@@ -45,35 +49,31 @@
     </header>
 
     <main>
-      <h1 class="visually-hidden">Наши работы</h1>
-
-      <!-- Portfolio filter -->
-      <section class="filter">
+      <section class="portfolio section">
         <div class="container">
+          <h1 class="visually-hidden">Наши работы</h1>
+
+          <!-- Portfolio filter -->
           <h2 class="visually-hidden">Фильтр по примерам работ</h2>
           <ul class="filter-list list">
-            <li>
+            <li class="item">
               <button class="button" type="button">Все</button>
             </li>
-            <li>
+            <li class="item">
               <button class="button" type="button">Веб-сайты</button>
             </li>
-            <li>
+            <li class="item">
               <button class="button" type="button">Приложения</button>
             </li>
-            <li>
+            <li class="item">
               <button class="button" type="button">Дизайн</button>
             </li>
-            <li>
+            <li class="item">
               <button class="button" type="button">Маркетинг</button>
             </li>
           </ul>
-        </div>
-      </section>
 
-      <!-- Portfolio -->
-      <section class="portfolio">
-        <div class="container">
+          <!-- Portfolio -->
           <h2 class="visually-hidden">Примеры работ</h2>
           <ul class="portfolio-list list">
             <li class="item">

@@ -19,11 +19,10 @@
   --hero-button-bg-color: #2196f3;
   --header-border-color: #ececec;
   --portfolio-border-color: #eeeeee;
+  --team-section-bg-color: #f5f4fa;
 }
 
 body {
-  max-width: 1600px;
-  margin: 0 auto;
   background-color: var(--primary-background-color);
   color: var(--primary-text-color);
   font-family: var(--font-main-text);
@@ -67,18 +66,23 @@ p {
   /* outline: solid 2px tomato; */
 }
 
+.section {
+  padding: 94px 0;
+}
+
 /* Common Header */
+.page-header {
+  padding: 24px 0px;
+  border-bottom: solid var(--header-border-color);
+}
+
 .header-flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: solid var(--header-border-color);
 }
 
 .logo {
-  padding-top: 25px;
-  padding-bottom: 25px;
-
   font-family: var(--font-logo);
   font-weight: 700;
   font-size: 26px;
@@ -154,8 +158,12 @@ p {
 }
 
 /* Hero Section */
+.hero-section {
+  padding: 200px 0;
+}
 .hero-title {
-  margin-bottom: 30px;
+  width: 696px;
+  margin: 0 auto 30px;
 
   color: var(--hero-title-color);
   font-weight: 900;
@@ -183,8 +191,6 @@ p {
 
 /* Benefits Section */
 .benefits {
-  padding-top: 94px;
-  padding-bottom: 94px;
 }
 
 .benefits-list {
@@ -222,7 +228,7 @@ p {
 
 /* About Section */
 .about {
-  padding-bottom: 94px;
+  padding-top: 0;
 }
 
 .about .section-title {
@@ -236,8 +242,7 @@ p {
 
 /* Team Section */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  background-color: var(--team-section-bg-color);
 }
 
 .team .section-title {
@@ -253,7 +258,7 @@ p {
 }
 
 .team-list .photo {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list .name {
@@ -266,6 +271,8 @@ p {
 }
 
 .team-list .position {
+  padding-bottom: 30px;
+
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.17;
@@ -276,8 +283,7 @@ p {
 .filter-list {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .filter-list .button {
@@ -285,13 +291,16 @@ p {
   border-radius: 4px;
   min-width: 73px;
   padding: 6px 22px;
-  margin-right: 8px;
 
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
   text-align: center;
+}
+
+.filter-list .item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .filter-list .button:hover,
@@ -301,7 +310,7 @@ p {
 }
 
 .portfolio {
-  padding-bottom: 94px;
+  /* padding-bottom: 94px; */
 }
 
 .portfolio-list {
@@ -356,6 +365,14 @@ p {
   margin-bottom: 20px;
 }
 
+.address .item {
+  display: block;
+}
+
+.address .item:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .address .link {
   text-decoration: none;
   line-height: 1.7;
@@ -370,14 +387,10 @@ p {
 }
 
 .address .map {
-  display: block;
-  margin-bottom: 9px;
   color: var(--footer-address-map-color);
 }
 
 .address .mail {
-  display: block;
-  margin-bottom: 9px;
 }
 
 .address .mail,
