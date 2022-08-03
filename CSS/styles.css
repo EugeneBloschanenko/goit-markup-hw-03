@@ -322,7 +322,13 @@ p {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-  border-bottom: solid var(--portfolio-border-color);
+  border: 1px solid var(--portfolio-border-color);
+}
+
+.portfolio-list .photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .portfolio-list .item:nth-child(3n) {
@@ -334,6 +340,8 @@ p {
 }
 
 .portfolio-list .title {
+  padding: 20px 24px 4px 24px;
+
   color: var(--primary-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -341,6 +349,8 @@ p {
 }
 
 .portfolio-list .description {
+  padding: 0 24px 20px 24px;
+
   color: var(--secondary-text-color);
   font-size: 16px;
   line-height: 1.88;
